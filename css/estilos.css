@@ -1,11 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 
-.container{
+.contenedor{
     background-color: rgb(114, 95, 255);
     display: flex;
     justify-content: center;
@@ -20,20 +20,24 @@
     border-radius: 20px;
     background-color: #fff;
     display: flex;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    
 }
 
 .img1{
     width: 50%;
+    
 }
+
 .img1 img{
     width: 381px;
     height: 280px;
     position: absolute;
     left: -8%;
-    top: 15%;
-    z-index: 0;
+    top: 15%;    
+    
+    
 }
 
 .img2 img{
@@ -45,23 +49,123 @@
 }
 
 .img3 img{
+    width: 150px;
+    height: 150px;
     position: absolute;
-    left: 13.5%;
-    top: 42%;
+    left: -9%;
+    top: 38%;
+    
 }
 
 .accordion-container{
     width: 50%;
-    text-align: justify;
     padding: 40px 90px 35px 0px;
     
 }
 
-.ac-panel p{
-    font-size: 15px;
+
+.accordion h2{
+    text-align: justify;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.accordion-body{
+    font-size: 14px;
+    font-weight: 300;
     color: #ccc;
 }
 
-h2{
-    margin-bottom: 30px;
+.accordion-item button{
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+    background: none;
+}
+
+.accordion-header{
+    height: 40px;
+}
+
+@media  (max-width: 900px) {
+
+    .caja{
+        width: 700px;
+        height: 55vh;
+    }
+}
+
+
+@media  (max-width: 760px) {
+
+    .caja{
+        width: 340px;
+        height: 70vh;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        overflow: visible;
+        padding: 0;
+    }
+
+    .img1{
+        width: 100%;
+    }
+
+    .img1 img{
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        top: -24.5%;
+        left: 13.5%;
+    }
+
+    .img2 img{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: -28%;
+        left: 13.5%;
+        
+    }
+
+    .img3 img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 12%;
+        top: -10%;
+        
+    }
+
+    .accordion-container{
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 60px 0px 0px 30px;
+       
+    }
+
+    .accordion h2{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .accordion-body{
+        font-size: 12px;
+        font-weight: 300;
+        color: #ccc;
+    }
+    
+    .accordion-item button{
+        color: rgb(155, 155, 155);
+        font-size: 14px;
+        background: none;
+    }
+
+    .accordion-header{
+        height: 35px;
+    }
 }
