@@ -52,8 +52,8 @@
     width: 150px;
     height: 150px;
     position: absolute;
-    left: -9%;
-    top: 38%;
+    left: 17.5%;
+    top: 43%;
     
 }
 
@@ -86,11 +86,52 @@
     height: 40px;
 }
 
-@media  (max-width: 900px) {
+/*
+ * ──────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: M E D I A   Q U E R Y S : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────
+ */
+
+
+
+
+@media  (max-width: 1200px) {
+   
+    .img2 img{
+        left: -50%;
+    }
+
+    .img3 img{
+        left: 10%;
+        top: 43%;
+        position: fixed;
+    }
+}
+
+@media  (max-width: 1100px) {
+   
+    .img3 img{
+        left: 10%;
+        top: 43%;
+        position: fixed;
+    }
+}
+
+@media  (max-width: 980px) {
 
     .caja{
         width: 700px;
         height: 55vh;
+    }
+
+    .img2 img{
+        left: -56%;
+    }
+
+    .img3 img{
+        left: 7%;
+        top: 45%;
+        position: fixed;
     }
 }
 
@@ -132,9 +173,8 @@
     .img3 img{
         width: 100px;
         height: 100px;
-        position: absolute;
-        left: 12%;
-        top: -10%;
+        left: 33%;
+        top: 12%;
         
     }
 
